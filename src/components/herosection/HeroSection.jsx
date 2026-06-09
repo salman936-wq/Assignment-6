@@ -2,7 +2,7 @@
 
 const HeroSection = () => {
     return (
-       <section className="px-6 w-10/12 lg:px-0 py-16 flex flex-col lg:flex-row justify-between items-center gap-10 mx-auto">
+       <section className="px-6 md:w-10/12 w-full lg:px-0 py-16 flex flex-col lg:flex-row justify-between items-center gap-10 mx-auto">
         <div className="flex-1 space-y-6">
           <div className="badge badge-outline border-purple-300 text-purple-600 bg-purple-50 gap-1 py-3 px-3 text-xs font-medium">
             <span className="text-purple-500">✦</span> New: AI-Powered Tools Available
@@ -25,7 +25,7 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="flex-1 flex justify-center">
-          <img className="w-full ml-40" src="/src/assets/banner.png" alt="" />
+          <img className="w-full md:ml-40" src="/src/assets/banner.png" alt="" />
         </div>
       </section>
     );
