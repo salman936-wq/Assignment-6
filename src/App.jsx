@@ -12,19 +12,20 @@ import Footer from "./components/footer/Footer";
 const fetchProductData = fetch("/productData.json").then(ok => ok.json());
 
 
-
-
-
-
-
 export default function DigiToolsLanding() {
-  const [activeTab, setActiveTab] = useState(true);
+
+const [activeTab, setActiveTab] = useState(true);
   
+const [buyNowArray, setBuyNowArray] = useState([])
+
+
+
   return (
+
     <div className="min-h-screen bg-white font-sans">
 
       {/* Navbar */}
-      <Navbar></Navbar>
+      <Navbar buyNowArray={buyNowArray}></Navbar>
 
       {/* Hero */}
       <HeroSection></HeroSection>
@@ -33,7 +34,7 @@ export default function DigiToolsLanding() {
       <Stats></Stats>
 
       {/* Products Section */}
-      <MainSection activeTab={activeTab} setActiveTab={setActiveTab} fetchProductData={fetchProductData}></MainSection>
+      <MainSection buyNowArray={buyNowArray} setBuyNowArray={setBuyNowArray} activeTab={activeTab} setActiveTab={setActiveTab} fetchProductData={fetchProductData}></MainSection>
 
       {/* Steps Section */}
       <Steps></Steps>
@@ -47,5 +48,8 @@ export default function DigiToolsLanding() {
       {/* Footer */}
       <Footer></Footer>
     </div>
+
   );
+
+
 }

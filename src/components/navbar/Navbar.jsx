@@ -1,4 +1,4 @@
-const Navbar = () => {
+const Navbar = ({buyNowArray}) => {
     return (
         <div className="sticky bg-white top-0 z-50">
         <nav className="navbar w-10/12 mx-auto px-6 lg:px-0 ">
@@ -31,8 +31,9 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end gap-2">
-          <span>
-            <span className="text-black">0</span>
+          <span className="relative">
+            
+            <span className={`text-black absolute bg-red-600/70 px-1.5 rounded-full -top-2 -right-4 ${buyNowArray.length == 0 ? "hidden" : "flex"}`}>{buyNowArray.length}</span>
             <i className="fa-solid fa-bag-shopping text-black"></i>
           </span>
           <button className="btn btn-sm bg-transparent text-black border-none shadow-none font-medium">Login</button>

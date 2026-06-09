@@ -6,7 +6,7 @@
       "badgeColor": "badge-warning",
       "name": "AI Writing Pro",
       "desc": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
-      "price": "$29",
+      "price": 29,
       "period": "/Mo",
       "features": [
         "Unlimited AI generations",
@@ -20,7 +20,7 @@
       "badgeColor": "badge-secondary",
       "name": "Design Templates Pack",
       "desc": "2000+ premium templates for social media, presentations, and marketing materials.",
-      "price": "$49",
+      "price": 49,
       "period": "One-Time",
       "features": [
         "2000+ templates",
@@ -34,7 +34,7 @@
       "badgeColor": "badge-accent",
       "name": "Premium Stock Assets",
       "desc": "Access millions of royalty-free photos, videos, and graphics for your projects.",
-      "price": "$19",
+      "price": 19,
       "period": "/Mo",
       "features": [
         "10M+ assets",
@@ -48,7 +48,7 @@
       "badgeColor": "badge-secondary",
       "name": "Automation Toolkit",
       "desc": "Automate repetitive tasks and streamline your workflow with powerful tools.",
-      "price": "$79",
+      "price": 79,
       "period": "/Mo",
       "features": [
         "50+ automations",
@@ -62,7 +62,7 @@
       "badgeColor": "badge-accent",
       "name": "Resume Builder Pro",
       "desc": "Create professional resumes and cover letters that land interviews.",
-      "price": "$15",
+      "price": 15,
       "period": "One-Time",
       "features": [
         "100+ templates",
@@ -76,7 +76,7 @@
       "badgeColor": "badge-warning",
       "name": "Social Media Content Kit",
       "desc": "Complete toolkit for creating engaging social media content across all platforms.",
-      "price": "$39",
+      "price": 39,
       "period": "/Mo",
       "features": [
         "5000+ assets",

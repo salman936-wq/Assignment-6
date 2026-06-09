@@ -4,9 +4,9 @@ import CardsData from "./CardsData";
 import Cart from "./Cart";
 
 
-const MainSection = ({ fetchProductData, setActiveTab, activeTab}) => {
+const MainSection = ({ fetchProductData, setActiveTab, activeTab, buyNowArray, setBuyNowArray}) => {
     const okPlayerDatas = use(fetchProductData)
-    const playerDatas = okPlayerDatas.PRODUCTS;
+    const toolsDatas = okPlayerDatas.PRODUCTS;
 
 
     return (
@@ -21,7 +21,7 @@ const MainSection = ({ fetchProductData, setActiveTab, activeTab}) => {
                     Choose from our curated collection of premium digital products designed to boost your productivity and creativity.
                 </p>
 
-                <Buttons activeTab={activeTab} setActiveTab={setActiveTab}></Buttons>
+                <Buttons buyNowArray={buyNowArray} activeTab={activeTab} setActiveTab={setActiveTab}></Buttons>
 
             </div>
 
@@ -29,7 +29,7 @@ const MainSection = ({ fetchProductData, setActiveTab, activeTab}) => {
 
             
             {
-                activeTab ? <CardsData playerDatas={playerDatas}></CardsData> : <Cart></Cart>
+                activeTab ? <CardsData setBuyNowArray={setBuyNowArray} buyNowArray={buyNowArray} toolsDatas={toolsDatas}></CardsData> : <Cart buyNowArray={buyNowArray} setBuyNowArray={setBuyNowArray}></Cart>
             }
             
 
